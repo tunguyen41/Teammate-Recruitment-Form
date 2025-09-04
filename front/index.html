@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="container">
+    <div id="left-section">
+      <img src="../assets/stadium.jpg" alt="stadium">
+      <h1>PART OF TEAM</h1>
+    </div>
+    <div id="right-section">
+      <div id="recruit-para">
+        <h4>
+          We’re looking for passionate, hardworking, and dedicated players to join our soccer team! Whether you’re an experienced player or just eager to improve your skills, this is your chance to train, compete, and grow with a supportive group. Together, we’ll push each other to be our best, both on and off the field. 
+        </h4>
+        <h4>
+          If you love the game, we want you on our side!
+        </h4>
+      </div>
+      <form action="post">
+        <h3>Let's fill this!</h3>
+        <div></div>
+        <div class="field">
+          <label for="first-name">*First name: </label>
+          <input type="text" id="first-name" name="firstName" required>
+        </div>
+        <div class="field">
+          <label for="last-name">*Last name: </label>
+          <input type="text" id="last-name" name="lastName" required>
+        </div>
+        <div class="field">
+          <label for="email">*Email: </label>
+          <input type="email" name="email" id="email" required>
+        </div>
+        <div class="field">
+          <label for="phone">*Phone Number: </label>
+          <input type="number" name="Numberphone" id="phone" required>
+        </div>
+        <div class="field">
+        <label>*Position(s):</label>
+        <div id="position">
+          <label><input type="checkbox" name="position" value="ST"> ST</label>
+          <label><input type="checkbox" name="position" value="LW"> LW</label>
+          <label><input type="checkbox" name="position" value="RW"> RW</label>
+          <label><input type="checkbox" name="position" value="CAM"> CAM</label>
+          <label><input type="checkbox" name="position" value="CM"> CM</label>
+          <label><input type="checkbox" name="position" value="CDM"> CDM</label>
+          <label><input type="checkbox" name="position" value="CB"> CB</label>
+          <label><input type="checkbox" name="position" value="LB"> LB</label>
+          <label><input type="checkbox" name="position" value="RB"> RB</label>
+          <label><input type="checkbox" name="position" value="GK"> GK</label>
+        </div>
+      </div>
+      <button type="submit">Summit</button>
+      </form>
+      <div id="ask">
+        <p>Further requirement?</p>
+        <a href="">Ask me</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

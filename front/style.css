@@ -1,0 +1,114 @@
+@font-face {
+    font-family: defaultFont;
+    src: url(../assets/Karla-VariableFont_wght.ttf);
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+#container{
+    font-family: defaultFont;
+    display: flex;
+}
+
+/*
+    Left side
+*/
+#left-section{
+    flex-basis: 40%;
+    position: relative;
+}
+
+h1{
+    position: absolute;
+    background-color: rgb(0, 0, 0, .5);
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    top: 50vh;
+    font-size: 3rem;
+}
+
+img{
+    border: none;
+    width: 100%;
+    height: 100%;
+}
+
+/*
+    Right side
+*/
+
+#right-section{
+    background-color: aliceblue;
+    flex-basis: 60%;
+    padding: 40px;
+}
+
+form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px 40px;
+    position: relative;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 40px;
+    margin-left: -39px;
+    margin-right: -40px; 
+    border: 1px solid black;
+}
+
+.field{
+    display: flex;
+    flex-direction: column;
+}
+
+#position{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+label{
+    display: block;
+    margin-bottom: 5px;   
+}
+
+button{
+    width: 15%;
+    margin-top: 30px;
+    color: white;
+    background-color: steelblue;
+    text-align: center;
+    height: 40px;
+    border-radius: 20px;
+    font-size: 1.2rem;
+    border: none;
+    grid-column: 1/-1;
+    justify-self: center;
+}
+
+button:hover{
+    width: 16%;
+    height: 40px;
+    background-color: cornflowerblue;
+    cursor: pointer;
+}
+
+#ask{
+    display: flex;
+}
+
+a{
+    padding-top: 20px;
+    color: chocolate;
+    text-decoration: none;
+    justify-content: center;
+}
+
+#ask p, a{
+    font-size: 1.2rem;
+}
+
